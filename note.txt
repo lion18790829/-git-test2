@@ -16,3 +16,16 @@ dog.yaml 의 반장을 순희로 변경
 rabbit.yaml 추가
 
 git diff 입력해서 변경사항 확인
+
+sourcetree 에서도 확인함
+(F5 를 눌러서 새로고침)
+
+git add . 후,
+git commit -m '메세지'
+
+- add 와 commit 한꺼번에 하기
+- (새로 추가된 파일이 없는 경우)
+git commit -am '메세지'
+
+
+dog에 서진 추가 및 commit
