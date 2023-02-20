@@ -32,4 +32,7 @@ dog에 서진 추가 및 commit
 
 elephant.yaml 추가 및 commit
 
+elephant.yaml 삭제
+lion 의 반장을 우주로 변경
+hippo.yaml 추가하고 commit
 
