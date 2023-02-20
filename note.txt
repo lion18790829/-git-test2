@@ -15,6 +15,7 @@ cat.yaml 삭제하기
 dog.yaml 의 반장을 순희로 변경
 rabbit.yaml 추가
 
+<<<<<<< HEAD
 git diff 입력해서 변경사항 확인
 
 sourcetree 에서도 확인함
@@ -36,3 +37,6 @@ elephant.yaml 삭제
 lion 의 반장을 우주로 변경
 hippo.yaml 추가하고 commit
 
+=======
+git diff 입력해서 변경사항 확인
+>>>>>>> parent of c551642 (dog에 서진 추가)
