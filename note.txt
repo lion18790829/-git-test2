@@ -29,3 +29,7 @@ git commit -am '메세지'
 
 
 dog에 서진 추가 및 commit
+
+elephant.yaml 추가 및 commit
+
+
