@@ -29,6 +29,7 @@ git commit -m '메세지'
 git commit -am '메세지'
 
 
+<<<<<<< HEAD
 dog에 서진 추가 및 commit
 
 elephant.yaml 추가 및 commit
@@ -40,3 +41,6 @@ hippo.yaml 추가하고 commit
 =======
 git diff 입력해서 변경사항 확인
 >>>>>>> parent of c551642 (dog에 서진 추가)
+=======
+dog에 서진 추가 및 commit
+>>>>>>> parent of 612b969 (elephant.yaml 추가)
