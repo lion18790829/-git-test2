@@ -106,7 +106,7 @@ git reset --hard 만 작성하고 실행함
 dog.yaml 에 지원 학생 추가
 아직 커밋하지 않은 상태에서
 직전 커밋 상태로 돌아가기 git reset --hard 
-
+--
 
 
 
