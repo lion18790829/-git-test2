@@ -9,3 +9,10 @@ ESC - 입력 종료
 :wq - 저장 후 종료
 :q - 저장 안 하고 종료
 :q! - 저장 안 하고 강제 종료
+
+
+cat.yaml 삭제하기
+dog.yaml 의 반장을 순희로 변경
+rabbit.yaml 추가
+
+git diff 입력해서 변경사항 확인
