@@ -1,0 +1,113 @@
+git commit
+실행 후 메세지 입력하기
+
+vim 에디터가 나옴
+i - 입력
+j - 아래 스크롤
+k - 위 스크롤
+ESC - 입력 종료
+:wq - 저장 후 종료
+:q - 저장 안 하고 종료
+:q! - 저장 안 하고 강제 종료
+
+
+cat.yaml 삭제하기
+dog.yaml 의 반장을 순희로 변경
+rabbit.yaml 추가
+
+git diff 입력해서 변경사항 확인
+
+sourcetree 에서도 확인함
+(F5 를 눌러서 새로고침)
+
+git add . 후,
+git commit -m '메세지'
+
+- add 와 commit 한꺼번에 하기
+- (새로 추가된 파일이 없는 경우)
+git commit -am '메세지'
+
+dog에 서진 추가 및 commit
+
+elephant.yaml 추가 및 commit
+
+elephant.yaml 삭제
+lion 의 반장을 우주로 변경
+hippo.yaml 추가하고 commit
+
+- 뒤로 돌아가기 : reset , revert
+reset
+git reset --hard 돌아갈 시점 커밋 해시코드
+
+Soft  - 모든 작업 내역 유지
+Mixed - 작업 내역은 유지, index는 reset             
+Hard  - 돌아간 시점 이후의 모든 작업 내역 삭제
+
+
+giraffe.yaml 추가하기
+.gitignore 에 note2.txt 추가하고 commit
+
+rhinoceros.yaml 추가하기
+- git add 하지 않으면 커밋하지 않은 변경사항으로 인식함
+rhinoceros.yaml 삭제하고
+- git status 로 확인하면 커밋하지 않은 변경사항 메세지가 없어짐
+
+
+- 뒤로 돌아가기 : reset , revert
+revert
+git revert 돌아갈 시점 커밋 해시코드
+revert 가 정상적으로 진행되면
+vim 에디터 창이 나옴
+commit 메세지 입력하고 계속 진행하면 됨
+
+revert 를 사용해서
+dog에 서진 추가 시점으로 돌아가기
+  ㄴ dog에 서진 추가 직전 시점으로 돌아가기 
+
+현재 dog에서 반장을 우주로 변경했는데
+(아직 commit 하지 않은 상태임)
+revert 하는 시점에서 dog 의 반장은 순희로 되어 있어서
+이 부분이 충돌해서 revert 작업이 일시 중지됨
+이 부분을 확실하게 수정(add)하고 revert 를 계속 진행해야 함
+   ㄴ git add .
+   ㄴ revert --continue
+
+rabbit.yaml 수정 및 커밋
+ ㄴ 반장을 수아로 변경함
+cat 삭제 rabbit 추가 dog 편집 시점 revert 하기
+  ㄴ 필요에 의해서 rabbit 의 내용을 수정했는데
+  ㄴ rabbit 을 삭제한다고 하니,....
+  ㄴ computer 는 바로 결정을 못함
+  ㄴ 여기서는 현재 시점(반장을 수아로 변경)에서
+  ㄴ rabbit.yaml 파일을 삭제하고 진행함
+
+git rm(remove) 명령어로 rabbit 을 삭제하고
+git revert --continue 함
+
+dog에 서진 추가 지점으로 revert 할 때 commit 안 하기
+git revert --no-commit dog에서진추가지점커밋해시코드
+
+
+elephant.yaml 추가 지점으로 revert 할 때 commit 안 하기
+git revert --no-commit elephant.yaml추가지점커밋해시코드
+  ㄴ 커밋되지 않은 내용들이 나오면서 커밋하라는 메세지가 나옴
+
+commit 하지 않고 revert 하는 경우,
+ ㄴ 해당 revert 시점에서 다른 작업을 추가로 하고
+    이들을 한꺼번에 commit 하려는 경우
+
+revert 를 진행하면 자동으로 commit 도 함께 진행됨
+
+아직 커밋하지 않은 내역을 다 지우고
+직전 커밋 상태로 돌아가는 경우
+git reset --hard 만 작성하고 실행함
+(커밋해시코드를 입력하지 않으면 직전 커밋 시점으로 돌아감)
+
+dog.yaml 에 지원 학생 추가
+아직 커밋하지 않은 상태에서
+직전 커밋 상태로 돌아가기 git reset --hard 
+
+
+
+
+
